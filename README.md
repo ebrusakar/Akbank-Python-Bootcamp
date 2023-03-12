@@ -13,7 +13,7 @@ This project is a pizza ordering system that allows customers to select their de
 
 ## Console-based Version
 The console-based version of the pizza ordering system provides a simple and easy-to-use interface for customers to place their orders. Users are guided through the process of ordering a pizza, selecting the desired toppings, and placing their order using text-based prompts.
-![](https://github.com/ebrusakar/Akbank-Python-Bootcamp/blob/main/gui.gif)
+![](https://github.com/ebrusakar/Akbank-Python-Bootcamp/blob/main/console.gif)
 
 ## Graphical User Interface (GUI) Version
 The GUI version of the pizza ordering system provides a visual interface for customers to place their orders. Users can select their pizza and toppings using a simple and intuitive interface that makes ordering a pizza a breeze.
@@ -35,4 +35,11 @@ If you would like to contribute to this project, please follow the steps below:
 - Create a pull request.
 
 ## Credits
-This project was created by ...
+This project was created by 
+- Tuba Demirok
+- Zehra Betül Çuhadar
+- Deniz Bitmez
+- İlayda Tiryaki
+- Ebru Şakar
+
+
