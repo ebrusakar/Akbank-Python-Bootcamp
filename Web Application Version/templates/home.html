@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Global Pizza Shop</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/static/style.css">
+<style>
+    /* Add some basic styles to the header and nav elements */
+    header {
+      background-color: #F44336;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #333;
+      overflow: hidden;
+    }
+    nav a {
+      float: left;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    nav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    /* Add styles to the sections */
+    section {
+      display: none;
+      text-align: center;
+    }
+    section:target {
+      display: block;
+    }
+
+    body {
+      background-image: url('/static/img/pizza5.avif');
+      background-repeat: no-repeat;
+      background-attachment: fixed;  
+      background-size: cover;
+    }
+
+    select option {
+        color: rgb(0, 0, 0);
+    }
+
+    #contact {
+        max-width: 400px;
+        border: 1px solid rgb(0, 0, 0);
+        padding: 2rem 2rem;
+        vertical-align: top;
+        background-color: rgb(172, 10, 37); 
+        text-align: center;
+    }
+   
+    #about-us {
+        max-width: 400px;
+        border: 1px solid rgb(0, 0, 0);
+        padding: 2rem 2rem;
+        vertical-align: top;
+        background-color: rgb(172, 10, 37); 
+        text-align: center;
+    }
+
+  </style>
+</head>
+<body>
+
+<div class="w3-container w3-green">
+  <h1>Welcome to Global Pizza Shop</h1> 
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about-us">About Us</a>
+    <a href="#contact">Contact Us</a>
+  </nav>
+</div>
+<div class="container">  
+    <section id="home">
+    <div class="menu">
+    
+        <h2 style="font-size:30px; color:white; margin:10px;">Menu</h2>
+        <h3><u>Pizzas</u></h3>
+        <ul>
+            <li>Classic Pizza: 9.99 TL</li>
+            <li>Margherita Pizza: 8.99 TL</li>
+            <li>Turk Pizza: 12.99 TL</li>
+            <li>Plain Pizza: 10.99 TL</li>
+        </ul>
+        <h3><u>Sauces/Toppings</u></h3>
+        <ul>
+            <li>Olives: 1.50 TL</li>
+            <li>Mushrooms: 1.75 TL</li>
+            <li>Goat Cheese: 2.00 TL</li>
+            <li>Meat: 5.00 TL</li>
+            <li>Onions: 4.50 TL</li>
+            <li>Corn: 3.75 TL</li>
+        </ul>
+      
+    </div>
+    <div class="choice">
+        <h2 style="font-size:30px; color:white; margin:10px;">Make Your Choice</h2>
+        <form action="/submit_order" method="POST">
+
+            <label for="pizza_type">Pizza Type:</label>
+            <select name="pizza_type" id="pizza_type">
+                <option value="Classic">Classic</option>
+                <option value="Margherita">Margherita</option>
+                <option value="TurkPizza">TurkPizza</option>
+                <option value="PlainPizza">PlainPizza</option>
+            </select><br><br>
+
+            <label for="pizza_size">Pizza Size:</label>
+            <input type="radio" name="pizza_size" value="Small" checked>Small
+            <input type="radio" name="pizza_size" value="Medium">Medium
+            <input type="radio" name="pizza_size" value="Large">Large<br><br>
+
+            <label for="toppings">Toppings:</label>
+            <input type="checkbox" name="toppings" value="Olives"> Olives<br>
+            <input type="checkbox" name="toppings" value="Mushrooms"> Mushrooms<br>
+            <input type="checkbox" name="toppings" value="GoatCheese"> GoatCheese<br>
+            <input type="checkbox" name="toppings" value="Meat"> Meat<br>
+            <input type="checkbox" name="toppings" value="Onions"> Onions<br>
+            <input type="checkbox" name="toppings" value="Corn"> Corn<br><br>
+
+            <label for="quantity">Quantity:</label>
+            <input type="number" name="quantity" value="1" min="1" max="10"><br><br>
+            <h4>Thank you for choosing us!</h4>
+    </div>
+    <div class="payment">
+        <h2 style="font-size:30px; color:white; margin:10px;">Order</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address"><br><br>
+            <label for="phone">Phone:</label>
+            <input type="text" id="phone" name="phone"><br><br>
+            <label for="credit_card_number">Credit Card Number:</label>
+            <input type="text" id="credit_card_number" name="credit_card_number"><br><br>
+            <label for="credit_card_password">Credit Card Password:</label>
+            <input type="password" id="credit_card_password" name="credit_card_password"><br><br>
+            <input type="submit" value="Feed Me!">
+        </form>
+    </div>
+    </section>
+</div>
+
+ 
+<section id="about-us">
+    <h2>About Us</h2>
+    <p>Global Pizza is an online pizza shop that aims to offer delicious pizzas to customers worldwide using the power of technology. As a part of the Global AI Hub, we select the best quality ingredients using artificial intelligence technologies and allow you to customize your pizzas as you wish. Our mission is to provide enjoyable and tasty experiences to pizza lovers all around the world.</p>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p>If you want to get in touch with us, you can use the following contact information:</p>
+    <ul>
+      <li>Address: Global AI Hub, XYZ Street, ABC Plaza, Istanbul, Turkey</li>
+      <li>Phone: +90 555 555 55 55</li>
+      <li>Email: info@globalpizza.com</li>
+    </ul><br>
+    <p>You can also reach us through our social media accounts:</p>
+    <ul>
+      <li>Instagram: <a href="https://www.instagram.com/globalpizza/">@globalpizza</a></li>
+      <li>Facebook: <a href="https://www.facebook.com/globalpizza/">@globalpizza</a></li>
+      <li>Twitter: <a href="https://www.twitter.com/globalpizza/">@globalpizza</a></li>
+    </ul>
+</section>
+
+</body>
+</html>
+
+

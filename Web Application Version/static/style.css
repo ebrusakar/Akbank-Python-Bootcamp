@@ -1,0 +1,188 @@
+/* global styles */
+body {
+  font-family: Arial, sans-serif;
+}
+
+* {
+	color:   #eee;
+ }
+
+.text {
+	font-size: 70px;
+  }
+  
+img {
+	max-width: 50%;
+	max-height:50%;
+  }
+
+/* header styles */
+.header {
+  background-color: #eee;
+  padding: 10px;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 36px;
+  margin: 0;
+}
+
+/* menu styles */
+h2 {
+  font-size: 24px;
+  margin-top: 20px;
+  text-align: center;
+
+}
+
+h3 {
+  font-size: 18px;
+
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+/* form styles */
+form {
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+select,
+input[type="radio"],
+input[type="checkbox"],
+input[type="number"],
+input[type="submit"] {
+  font-size: 16px;
+  margin-bottom: 10px;
+  
+}
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/* specific styles */
+#pizza_type {
+  margin-bottom: 10px;
+}
+
+h3 u {
+  text-decoration: none;
+}
+
+h4 {
+  font-size: 16px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.container {
+  margin: 1rem;
+  padding: 2rem 2rem;
+  text-align: center;
+}
+
+.menu {
+  display: inline-block;
+  border: 1px solid rgb(0, 0, 0);
+  padding: 2rem 2rem;
+  vertical-align: top;
+  background-color: rgb(172, 10, 37); 
+
+}
+
+.choice {
+  display: inline-block;
+  border: 1px solid rgb(0, 0, 0);
+  padding: 2rem 2rem;
+  vertical-align: top;
+  background-color: rgb(172, 10, 37); 
+
+}
+
+.payment {
+  display: inline-block;
+  border: 1px solid rgb(0, 0, 0);
+  padding: 2rem 2rem;
+  vertical-align: top;
+  background-color: rgb(172, 10, 37); 
+
+}
+
+.order {
+  display: inline-block;
+  border: 1px solid rgb(0, 0, 0);
+  padding: 2rem 2rem;
+  vertical-align: top;
+  background-color: rgb(172, 10, 37); 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#about-us {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#contact {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+/* title styles */
+h1 {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background-color: #f1f1f1;
+  padding: 10px;
+  color: #010000;
+  border: 1px solid #ccc;
+}
+
+input, select, textarea{
+  color: #000000;
+}
+
+textarea:focus, input:focus {
+  color: #000000;
+}
+
+li {
+  font-size: 15px;
+  margin-left: 10px;
+  list-style-type: circle;
+  text-align: left;
+
+}
