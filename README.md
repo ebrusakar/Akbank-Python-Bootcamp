@@ -9,7 +9,7 @@ This project is a pizza ordering system that allows customers to select their de
 
 - [**Console-based Version**](https://github.com/ebrusakar/Akbank-Python-Bootcamp/blob/main/Console-based%20Version/globalpizza.ipynb)
 - [**Graphical User Interface (GUI) Version / Tkinter**](https://github.com/ebrusakar/Akbank-Python-Bootcamp/blob/main/GUI%20Version/tk.py)
-- [**Web Application Version / Flask**](https://github.com/ebrusakar/Akbank-Python-Bootcamp/blob/main/Web%20Application%20Version/main.py)
+- [**Web Application Version / Flask**](https://github.com/ebrusakar/Akbank-Python-Bootcamp/tree/main/Web%20Application%20Version)
 
 ## Console-based Version
 The console-based version of the pizza ordering system provides a simple and easy-to-use interface for customers to place their orders. Users are guided through the process of ordering a pizza, selecting the desired toppings, and placing their order using text-based prompts.
