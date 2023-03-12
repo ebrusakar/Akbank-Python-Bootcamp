@@ -4,63 +4,31 @@
 <td> <img src="https://w7.pngwing.com/pngs/973/59/png-transparent-akbank-hd-logo.png" width="200""/> </td>
 </tr></table>
 
-## **Pizza Order System**
-### **Project Overview**
+# Pizza Ordering System
+This project is a pizza ordering system that allows customers to select their desired pizza and place their order. There are three different versions of this project available:
 
-Would you like to open a pizza shop? Then this project could be your dream project. The project aims to have users design their own pizzas and add the user to the database after paying. So what kind of tasks do we have in this project?<br>
+- Console-based Version
+- Graphical User Interface (GUI) Version / Tkinter
+- Web Application Version / Flask
 
-The Pizza Order system starts with the users choosing the pizza on the menu and the sauces they want.  They have to pay with their choice of sauce and pizza.  Users are required to pay by credit card.  Each pizza has a description and price.  Note that these values ​​must be set as a constant value within the classes.
+## Console-based Version
+The console-based version of the pizza ordering system provides a simple and easy-to-use interface for customers to place their orders. Users are guided through the process of ordering a pizza, selecting the desired toppings, and placing their order using text-based prompts.
 
-### **Creating a Google Colaboratory File**
+## Graphical User Interface (GUI) Version
+The GUI version of the pizza ordering system provides a visual interface for customers to place their orders. Users can select their pizza and toppings using a simple and intuitive interface that makes ordering a pizza a breeze.
 
-- Make sure your project has .ipynb extension.
-- Make sure that there are comment lines explaining the details in your project.
-- When submitting the project, submit the cells of this .ipynb file so that the cells are run and the results are visible.
-
-### **Importing Required Libraries**
-- Import csv and datetime libraries
-
-### **Create “Menu.txt”**
-- Create a file named Menu.txt and write the following text in it. <br>
-```
-* Please Choose a Pizza Base: 
-1: Classic 
-2: Margherita 
-3: TurkPizza 
-4: PlainPizza 
-* and sauce of your choice: 
-11: Olives 
-12: Mushrooms 
-13: GoatCheese 
-14: Meat 
-15: Onions 
-16: Corn 
-* Thank you!
-```
-
-### **Create superclass “pizza”**
-- Define the get_description() and get_cost() methods for encapsulation that creates the pizza class and inside this class.
-  - This description should be a short description of the prepared pizza!
-
-### **Create subclass “pizza”**
-- Classic, Margherita, Turk Pizza, Dominos Pizza. Create pizza classes. Since each of these pizza types is a type of pizza, these classes will be defined as subclasses.
-  - Don't forget that each pizza must have its own price and description of the pizzas as variables.
-
-### **Create superclass “Decorator”**
-- Create a decorator class. Decorator is called super class of all sauce classes here.
-- The decorator class will use the get_description() and get_cost() methods using the properties of the pizza class. Complete the decorator class using the following methods.
-
-```python
-   def get_cost(self):
-       return self.component.get_cost() + \
-         Pizza.get_cost(self)
+## Web Application Version
+The web application version of the pizza ordering system is a web-based platform that allows customers to place their orders from anywhere with an internet connection. This version provides a user-friendly interface for customers to select their pizza and toppings and place their order, all without leaving their web browser.
 
 
-   def get_description(self):
-       return self.component.get_description() + \
-         ' ' + Pizza.get_description(self)
-```
-- Determine Olives, Mushrooms, Goat Cheese, Meat, Onions, and Corn as sauces, and define each of the sauces you have determined as a class.
-  - Don't forget that each sauce must have its own price and description of the pizzas as variables.
-- Create a main function. This function will print the menu on the screen first. Then let the user choose a pizza and sauce from the menu. After calculating the total price of the selected products, it should ask the user for a name, ID number, credit card number and credit card password. with all required information
-- Calculate the payments of the people who choose their pizza and keep the user's name, user id, credit card information, description of order, time order and credit card password in the "Orders_Database.csv" file, which we call the database.
+## Contributing
+If you would like to contribute to this project, please follow the steps below:
+
+- Fork the repository.
+- Create a new branch for your changes.
+- Make your changes and commit them.
+- Push your changes to your fork.
+- Create a pull request.
+
+## Credits
+This project was created by ...
